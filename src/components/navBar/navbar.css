@@ -1,0 +1,20 @@
+#navBar {
+    background-color: red;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.categorias {
+    list-style: none;
+    display: none;
+}
+
+.categoria:hover .categorias{
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}

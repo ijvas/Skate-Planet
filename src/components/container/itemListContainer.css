@@ -1,0 +1,11 @@
+#container {
+    width: 500px;
+    border: 1px solid black;
+    position: absolute;
+    top: 250px;
+    left: 435px;
+}
+
+h1 {
+    padding: 10px;
+}
