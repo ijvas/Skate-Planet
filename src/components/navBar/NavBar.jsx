@@ -5,11 +5,11 @@ import { CartWidget } from './CartWidget'
 export const NavBar = () => {
     return (
         <nav id="navBar">
-            <li><a href="#">Skate Planet</a></li>
+            <li><button>Skate Planet</button></li>
 
             <li className="categoria">
                 
-                <a href="#">Indumentaria</a>
+                <button>Indumentaria</button>
 
                 <ul className="categorias">
                     <li>Remeras</li>
@@ -21,7 +21,7 @@ export const NavBar = () => {
 
             <li className="categoria">
                 
-                <a href="#">Accesorios</a>
+                <button>Accesorios</button>
                 
                 <ul className="categorias">
                     <li>Tablas</li>

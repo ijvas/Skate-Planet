@@ -9,3 +9,13 @@
 h1 {
     padding: 10px;
 }
+
+.cards {
+    text-align: center;
+}
+
+.productImg {
+    width: 130px;
+    height: 150px;
+
+}
