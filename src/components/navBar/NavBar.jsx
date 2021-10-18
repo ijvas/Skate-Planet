@@ -1,37 +1,23 @@
 import React from 'react'
 import './navbar.css'
+import pageLogo  from '../navBar/pageLogo.png'
 import { CartWidget } from './CartWidget'
+import { Link } from 'react-router-dom'
 
 export const NavBar = () => {
     return (
         <nav id="navBar">
-            <li><button>Skate Planet</button></li>
 
-            <li className="categoria">
                 
-                <button>Indumentaria</button>
+            <Link to="/products">Products</Link>
+            <Link to="/products/boards">Boards</Link>
 
-                <ul className="categorias">
-                    <li>Remeras</li>
-                    <li>Pantalones</li>
-                    <li>Zapatillas</li>
-                </ul>
+            <Link to="/"><img src={pageLogo} alt="Brand Logo"/></Link>
 
-            </li>
+            <Link to="/products/apparel">Apparel</Link>
+            <Link to="/contact">Contact Us!</Link>
 
-            <li className="categoria">
-                
-                <button>Accesorios</button>
-                
-                <ul className="categorias">
-                    <li>Tablas</li>
-                    <li>Trucks</li>
-                    <li>Lijas</li>
-                </ul>
-
-            </li>
-
-            <CartWidget/>
+            <Link to="/cart"><CartWidget/></Link>
 
 
         </nav>

@@ -1,5 +1,4 @@
 #navBar {
-    background-color: red;
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
@@ -15,6 +14,12 @@
     display: block;
 }
 
-a {
+nav a {
     text-decoration: none;
+    color: #585858;
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: red;
 }
