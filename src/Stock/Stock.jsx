@@ -9,7 +9,8 @@ export const stock = [
         description: "Andrew Reynolds Edition 8.0",
         price: 5000,
         img: bakerReynolds,
-        category: "boards"
+        category: "boards",
+        stock: 20
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ export const stock = [
         description: "Modelo clasico 8.25'",
         price: 6500,
         img: "https://i.pinimg.com/originals/db/ba/72/dbba723ec8b3614cb830087471fd1eb4.jpg",
-        category: "boards"
+        category: "boards",
+        stock: 10
     },
     {
         id: 3,
@@ -25,7 +27,8 @@ export const stock = [
         description: "1982 Team Edition 8.25'",
         price: 5000,
         img: "https://cdn.shopify.com/s/files/1/2996/5068/products/Element-Major-League-Tie-Dye-8.25_quot_-tabla-de-skate--_296146@2x.jpg?v=1595613889",
-        category: "boards"
+        category: "boards",
+        stock: 15
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ export const stock = [
         description: "Purple Edition 7.75'",
         price: 5000,
         img: "https://picnicskateshop.net/wp-content/uploads/2021/04/primitive-nuevo-script-purple-core-skate-tabla.jpg",
-        category: "boards"
+        category: "boards",
+        stock: 19
     },
     {
         id: 5,
@@ -41,7 +45,8 @@ export const stock = [
         description: "Black with red letters t-shirt",
         price: 60,
         img: tShirt,
-        category: "apparel"
+        category: "apparel",
+        stock: 7
     },
     {
         id: 6,
@@ -49,6 +54,7 @@ export const stock = [
         description: "Black with red letters PullOver",
         price: 120,
         img: pullOver,
-        category: "apparel"
+        category: "apparel",
+        stock: 5
     }
 ]
