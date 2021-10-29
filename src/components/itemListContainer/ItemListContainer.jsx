@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useEffect } from 'react/cjs/react.development'
 import { Loader } from '../Loader/Loader'
 import { askProducts } from '../../helpers/askProducts'
 import { ItemList } from './ItemList'
 import { useParams } from 'react-router'
+import { UiContext } from '../../context/UiContext'
 
 export const ItemListContainer = () =>{
 
     const [products, setProducts] = useState( [] )
-    const [loading, setLoading] = useState(false)
+    
+    const {loading, setLoading} = useContext(UiContext)
 
 
     const {categoryId} = useParams()

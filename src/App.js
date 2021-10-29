@@ -8,54 +8,69 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom'
+import { CartScreen } from './components/CartScreen/CartScreen';
+import { CartProvider } from './context/CartContext'
+import { UiProvider } from './context/UiContext';
 
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <UiProvider>
 
-        <NavBar/>
 
-        <Switch>
+        <CartProvider>
 
-          <Route exact path="/">
-            <h1>Starting Page</h1>
-          </Route>
 
-          <Route exact path="/products">
-            <ItemListContainer/>
-          </Route>
+          <BrowserRouter>
 
-          <Route exact path="/products/:categoryId">
-            <ItemListContainer/>
-          </Route>
+            <NavBar/>
 
-          <Route exact path="/detail/:productId">
-            <ItemDetailContainer />
-          </Route>
+            <Switch>
 
-          <Route exact path="/contact">
-            <h1>Contact us</h1>
-          </Route>
+              <Route exact path="/">
+                <h1>Starting Page</h1>
+              </Route>
 
-          <Route exact path="/cart">
-            {/* TO DO... HACER VISTA DEL CARRITO */}
-            <h1>Carrito</h1>
-          </Route>
+              <Route exact path="/products">
+                <ItemListContainer/>
+              </Route>
 
-          <Route>
-            <Redirect to="/" />
-          </Route>
-          {/* <Route path="*">
-            <h1>404... No encontrado</h1>
-            <button>Volver al inicio</button>
-          </Route> */}
+              <Route exact path="/products/:categoryId">
+                <ItemListContainer/>
+              </Route>
 
-        </Switch>
+              <Route exact path="/detail/:productId">
+                <ItemDetailContainer />
+              </Route>
 
-      </BrowserRouter>
+              <Route exact path="/contact">
+                <h1>Contact us</h1>
+              </Route>
+
+              <Route exact path="/cart">
+                <CartScreen/>
+              </Route>
+
+              <Route>
+                <Redirect to="/" />
+              </Route>
+              {/* <Route path="*">
+                <h1>404... No encontrado</h1>
+                <button>Volver al inicio</button>
+              </Route> */}
+
+            </Switch>
+
+          </BrowserRouter>
+
+
+        </CartProvider>
+      
+
+      </UiProvider>
+
     </>
   );
 }

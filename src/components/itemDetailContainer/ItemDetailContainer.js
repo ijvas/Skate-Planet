@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router'
+import { UiContext } from '../../context/UiContext'
 import { askProducts } from '../../helpers/askProducts'
 import { ItemDetail } from './ItemDetail'
 
 export const ItemDetailContainer = () => {
     
     const [product, setProduct] = useState(null)
-    const [loading, setLoading] = useState(false)
+    
+    const {loading, setLoading} = useContext(UiContext)
 
     const {productId} = useParams()
 
