@@ -25,7 +25,7 @@ export const ItemCount = ( {quantity, modifyQuantity, maxStock} ) => {
 
             <button
                 onClick={handleResta}
-                className="btn btn-primary"
+                className={`btn ${quantity === 0 ? "btn-danger desactivado" : "btn-primary"}`}
             >
                 -
             </button>
@@ -34,7 +34,7 @@ export const ItemCount = ( {quantity, modifyQuantity, maxStock} ) => {
             
             <button
                 onClick={handleSuma}
-                className="btn btn-primary"
+                className={`btn ${quantity === maxStock ? "btn-danger desactivado" : "btn-primary"}`}
             >
                 +
             </button>

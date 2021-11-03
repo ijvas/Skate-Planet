@@ -3,6 +3,7 @@ import { useHistory } from 'react-router'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
 import { ItemCount } from '../ItemCount/ItemCount'
+import '../itemDetailContainer/ItemDetail.css'
 
 export const ItemDetail = ({id, name, description, price, img, category, stock}) =>{
 
@@ -33,9 +34,8 @@ export const ItemDetail = ({id, name, description, price, img, category, stock})
             <h2>{name}</h2>
             <img src={img} alt={name}/>
             <p>{description}</p>
-            <h4>{price}</h4>
+            <h4>${price}</h4>
             
-            {/* opción de compra / contador  */}
 
             { isInCart(id)
                 ? <Link to="/cart" className="btn btn-success">Finish Shopping</Link> 
@@ -44,7 +44,7 @@ export const ItemDetail = ({id, name, description, price, img, category, stock})
                     <>
                         <ItemCount quantity={quantity} modifyQuantity={setQuantity} maxStock={stock}/>
                         <button
-                            className="btn btn-success mt-3"
+                            className={`mt-3 btn ${quantity === 0 ? "btn-danger desactivado" : "btn-primary"}`}
                             onClick={handleAgregar}
                             >
                             Agregar

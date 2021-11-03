@@ -23,3 +23,7 @@ nav a {
 nav a:hover {
     color: red;
 }
+
+#cartWidget {
+    pointer-events: none;
+}

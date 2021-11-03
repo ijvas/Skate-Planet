@@ -11,6 +11,7 @@ import {
 import { CartScreen } from './components/CartScreen/CartScreen';
 import { CartProvider } from './context/CartContext'
 import { UiProvider } from './context/UiContext';
+import { Form } from './components/Form/Form';
 
 
 function App() {
@@ -30,10 +31,6 @@ function App() {
             <Switch>
 
               <Route exact path="/">
-                <h1>Starting Page</h1>
-              </Route>
-
-              <Route exact path="/products">
                 <ItemListContainer/>
               </Route>
 
@@ -46,7 +43,7 @@ function App() {
               </Route>
 
               <Route exact path="/contact">
-                <h1>Contact us</h1>
+                <Form/>
               </Route>
 
               <Route exact path="/cart">

@@ -12,7 +12,7 @@ export const NavBar = () => {
             <Link to="/products">Products</Link>
             <Link to="/products/boards">Boards</Link>
 
-            <Link to="/"><img src={pageLogo} alt="Brand Logo"/></Link>
+            <img src={pageLogo} alt="Brand Logo"/>
 
             <Link to="/products/apparel">Apparel</Link>
             <Link to="/contact">Contact Us!</Link>
