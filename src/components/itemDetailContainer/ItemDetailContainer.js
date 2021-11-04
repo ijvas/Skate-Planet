@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router'
 import { UiContext } from '../../context/UiContext'
-import { askProducts } from '../../helpers/askProducts'
+import { getFirestore } from '../../firebase/config'
+// import { askProducts } from '../../helpers/askProducts'
 import { Loader } from '../Loader/Loader'
 import { ItemDetail } from './ItemDetail'
 
@@ -13,17 +14,41 @@ export const ItemDetailContainer = () => {
 
     const {productId} = useParams()
 
+    // useEffect( () => {
+    //     setLoading(true)
+
+    //     askProducts()
+    //         .then( response => {
+    //             setProduct( response.find( prod => prod.id === Number(productId)) )
+    //         })
+    //         .finally( () => {
+    //             setLoading(false)
+    //         })
+    // }, [productId, setLoading])
+
     useEffect( () => {
+
         setLoading(true)
 
-        askProducts()
-            .then( response => {
-                setProduct( response.find( prod => prod.id === Number(productId)) )
+        const db = getFirestore()
+        const products = db.collection('Productos')
+
+        const product = products.doc(productId)
+
+        product.get()
+            .then( (response) => {
+                setProduct({
+                    id: response.id,
+                    ...response.data()
+                })
             })
+            .catch( (error) => console.log(error) )
             .finally( () => {
                 setLoading(false)
             })
-    }, [productId])
+
+
+    }, [productId, setLoading] )
     
     return (
         <div className="container mt-5">
