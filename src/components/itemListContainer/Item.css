@@ -1,0 +1,33 @@
+.cardContainer {
+    width: 336.25px;
+    height: 336.25px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.cardImg {
+    height: 316.250px;
+    width: 296.250px;
+}
+
+.cardImg:hover {
+    transition: .3s ease;
+    opacity: 0.6;
+}
+
+.cardTitle {
+    color: #585858;
+    font-size: 14px;
+    font-family: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 50px;
+    transition: .3s ease;
+}
+
+.cardTitle:hover {
+    color: rgba(255, 0, 0, 0.932);
+}

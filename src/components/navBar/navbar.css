@@ -1,17 +1,16 @@
-#navBar {
+.navBar {
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
-.categorias {
-    list-style: none;
-    display: none;
-}
-
-.categoria:hover .categorias{
-    display: block;
+.navbar--img {
+    position: relative;
+    right: 130px;
 }
 
 nav a {
@@ -21,9 +20,9 @@ nav a {
 }
 
 nav a:hover {
-    color: red;
+    color: #dc2720;
 }
 
-#cartWidget {
-    pointer-events: none;
+.hr {
+    margin-bottom: 0px;
 }

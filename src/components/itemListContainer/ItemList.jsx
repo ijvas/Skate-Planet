@@ -1,16 +1,13 @@
 import React from 'react'
 import { Item } from './Item'
+import './ItemList.css'
 
 
 export const ItemList = ( {products = []} ) => {
     return(
 
-        <div className="container mt-4">
-
-            <div className="row">
-                { products.map((product) => <Item product={product} key={product.id}/> )}
-            </div>
-
+        <div className="cardsContainer">
+            { products.map((product) => <Item product={product} key={product.id}/> )}
         </div>
         
     )

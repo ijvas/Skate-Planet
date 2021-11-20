@@ -16,7 +16,7 @@ export const Loader = () =>{
                 <div className="sk-cube sk-cube8"></div>
                 <div className="sk-cube sk-cube9"></div>
             </div>
-            <h2 id="TextoLoader">Cargando...</h2>
+            <h2 id="TextoLoader">Loading...</h2>
             </div>
         </>
     )

@@ -1,0 +1,21 @@
+.productInCartContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.img {
+    width: 160px;
+    height: 160px;
+}
+
+.total {
+    text-align: center;
+}
+
+.eraseAndCheckoutButtons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}

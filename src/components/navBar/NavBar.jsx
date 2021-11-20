@@ -3,24 +3,24 @@ import './navbar.css'
 import pageLogo  from '../navBar/pageLogo.png'
 import { CartWidget } from './CartWidget'
 import { Link } from 'react-router-dom'
+import { SideBar } from './SideBar'
+
 
 export const NavBar = () => {
     return (
-        <nav id="navBar">
+        <>
+        <nav className="navBar">
 
-                
-            <Link to="/products">Products</Link>
-            <Link to="/products/boards">Boards</Link>
+            <SideBar className/>
 
-            <img src={pageLogo} alt="Brand Logo"/>
+            <Link to="/"><img src={pageLogo} alt="Brand Logo" className="navbar--img"/></Link>
 
-            <Link to="/products/apparel">Apparel</Link>
-            <Link to="/contact">Contact Us!</Link>
-
-            <Link to="/cart"><CartWidget/></Link>
+            <Link to="/products/cart"><CartWidget/></Link>
 
 
         </nav>
+        <hr className="hr"/>
+        </>
     )
 }
 

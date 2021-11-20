@@ -8,10 +8,10 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom'
-import { CartScreen } from './components/CartScreen/CartScreen';
+import { CartScreen } from './components/CartScreen/CartScreen'
 import { CartProvider } from './context/CartContext'
 import { UiProvider } from './context/UiContext';
-import { Form } from './components/Form/Form';
+import { Checkout } from './components/Checkout/Checkout';
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
                 <ItemListContainer/>
               </Route>
 
-              <Route exact path="/products/:categoryId">
+              <Route exact path="/:categoryId">
                 <ItemListContainer/>
               </Route>
 
@@ -42,21 +42,21 @@ function App() {
                 <ItemDetailContainer />
               </Route>
 
-              <Route exact path="/contact">
-                <Form/>
+              <Route exact path="/products/cart">
+                <CartScreen/>
               </Route>
 
-              <Route exact path="/cart">
-                <CartScreen/>
+              <Route exact path="/products/checkout">
+                <Checkout/>
               </Route>
 
               <Route>
                 <Redirect to="/" />
               </Route>
-              {/* <Route path="*">
-                <h1>404... No encontrado</h1>
-                <button>Volver al inicio</button>
-              </Route> */}
+              
+              <Route path="*">
+                <Redirect to="/products"/>
+              </Route>
 
             </Switch>
 

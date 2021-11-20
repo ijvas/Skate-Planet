@@ -2,3 +2,42 @@
     opacity: 0.7;
     pointer-events: none;
 }
+
+.productDetailContainer {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.productImageDetail img {
+    height: 450px;
+}
+
+.productDetails {
+    font-family: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+}
+
+.name {
+
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price {
+    color: rgb(255, 42, 42);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.descriptions {
+    color: #585858;
+    font-size: 1rem;
+    line-height: 2;
+    
+}
+
+
+.backButton{
+    margin-left: 10px;
+}
