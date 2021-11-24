@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.948a747a.chunk.css",
-    "main.js": "/static/js/main.a699dfbf.chunk.js",
-    "main.js.map": "/static/js/main.a699dfbf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3f5e62d1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3f5e62d1.js.map",
-    "static/css/2.f2512455.chunk.css": "/static/css/2.f2512455.chunk.css",
-    "static/js/2.67c00fd4.chunk.js": "/static/js/2.67c00fd4.chunk.js",
-    "static/js/2.67c00fd4.chunk.js.map": "/static/js/2.67c00fd4.chunk.js.map",
-    "static/js/3.782d4605.chunk.js": "/static/js/3.782d4605.chunk.js",
-    "static/js/3.782d4605.chunk.js.map": "/static/js/3.782d4605.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.f2512455.chunk.css.map": "/static/css/2.f2512455.chunk.css.map",
-    "static/css/main.948a747a.chunk.css.map": "/static/css/main.948a747a.chunk.css.map",
-    "static/js/2.67c00fd4.chunk.js.LICENSE.txt": "/static/js/2.67c00fd4.chunk.js.LICENSE.txt",
-    "static/media/pageLogo.f5b531be.png": "/static/media/pageLogo.f5b531be.png"
+    "main.css": "/ijvas/Skate_Planet/static/css/main.948a747a.chunk.css",
+    "main.js": "/ijvas/Skate_Planet/static/js/main.a699dfbf.chunk.js",
+    "main.js.map": "/ijvas/Skate_Planet/static/js/main.a699dfbf.chunk.js.map",
+    "runtime-main.js": "/ijvas/Skate_Planet/static/js/runtime-main.a42d2920.js",
+    "runtime-main.js.map": "/ijvas/Skate_Planet/static/js/runtime-main.a42d2920.js.map",
+    "static/css/2.f2512455.chunk.css": "/ijvas/Skate_Planet/static/css/2.f2512455.chunk.css",
+    "static/js/2.b349ab4c.chunk.js": "/ijvas/Skate_Planet/static/js/2.b349ab4c.chunk.js",
+    "static/js/2.b349ab4c.chunk.js.map": "/ijvas/Skate_Planet/static/js/2.b349ab4c.chunk.js.map",
+    "static/js/3.782d4605.chunk.js": "/ijvas/Skate_Planet/static/js/3.782d4605.chunk.js",
+    "static/js/3.782d4605.chunk.js.map": "/ijvas/Skate_Planet/static/js/3.782d4605.chunk.js.map",
+    "index.html": "/ijvas/Skate_Planet/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/ijvas/Skate_Planet/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.948a747a.chunk.css.map": "/ijvas/Skate_Planet/static/css/main.948a747a.chunk.css.map",
+    "static/js/2.b349ab4c.chunk.js.LICENSE.txt": "/ijvas/Skate_Planet/static/js/2.b349ab4c.chunk.js.LICENSE.txt",
+    "static/media/pageLogo.f5b531be.png": "/ijvas/Skate_Planet/static/media/pageLogo.f5b531be.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3f5e62d1.js",
+    "static/js/runtime-main.a42d2920.js",
     "static/css/2.f2512455.chunk.css",
-    "static/js/2.67c00fd4.chunk.js",
+    "static/js/2.b349ab4c.chunk.js",
     "static/css/main.948a747a.chunk.css",
     "static/js/main.a699dfbf.chunk.js"
   ]
