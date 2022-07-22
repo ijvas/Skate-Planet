@@ -4,7 +4,7 @@ This repository contains a Web site made as a final project for the React-Js cou
 
 ## The Project
 
-## [Skate Planet](LINK DE LA PAGINA)
+## [Skate Planet](https://kind-bose-e3d0a2.netlify.app/)
 ### History..
 
 This page is an imitation of an e-commerce of the company dedicated to skateboarding "Deathwish". The idea arose from the creator's passion for this sport.
